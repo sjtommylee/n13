@@ -1,6 +1,6 @@
 module.exports = {
   // mode: "jit",
-  content: [],
+  content: ["!.node_modules"],
   theme: {
     extend: {},
   },
