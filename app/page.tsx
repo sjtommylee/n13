@@ -5,8 +5,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="hidden">home pagesss</h1>
-    </div>
+    <section className="">
+      <h1 className="hidden">home page in app/_</h1>
+    </section>
   );
 }
