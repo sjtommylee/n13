@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@next/font': ^13.2.3
   '@react-three/drei': ^9.56.27
   '@react-three/fiber': ^8.11.5
   '@stitches/react': ^1.2.8
@@ -27,6 +28,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
+  '@next/font': 13.2.3
   '@react-three/drei': 9.56.27_o3dg24eqezh4uirug3mgy2mhku
   '@react-three/fiber': 8.11.5_ute6kgba6tjflznmd5zvq2zrly
   '@stitches/react': 1.2.8_react@18.2.0
@@ -171,6 +173,10 @@ packages:
     resolution: {integrity: sha512-/UW29MPgX5P1J1AVIj9g1TCv4BKzUTBB54wgtEp7X15pEKerACGYv9iny44KGZxSJDizWD2+Zaw6+E7do4kwRA==}
     dependencies:
       glob: 7.1.7
+    dev: false
+
+  /@next/font/13.2.3:
+    resolution: {integrity: sha512-7EHzk0f7FVYICLUZTpyPk93IfcTUao++Xt1Sgb+Zk5dVOCYHabqLtlF5ywSoXIqyFlo0qlshEBxsrzHAGTWkDw==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.2.1:

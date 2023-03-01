@@ -8,6 +8,5 @@ export function getWindowDimensions() {
 
 export const useWindowDimensions = () => {
   const [windowDimensions] = useState(getWindowDimensions());
-  console.log(windowDimensions);
   return windowDimensions;
 };
