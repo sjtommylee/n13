@@ -4,10 +4,10 @@ import { Header } from "../components/header";
 import localFont from "@next/font/local";
 import { Raleway, Inter as FontSans } from "next/font/google";
 
-const sfPro = localFont({
-  src: "",
-  variable: "--font-sf",
-});
+// const sfPro = localFont({
+//   src: "",
+//   variable: "--font-sf",
+// });
 
 const raleway = Raleway({
   subsets: ["latin"],
