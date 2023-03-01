@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@react-three/drei': ^9.56.27
   '@react-three/fiber': ^8.11.5
+  '@stitches/react': ^1.2.8
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -28,6 +29,7 @@ specifiers:
 dependencies:
   '@react-three/drei': 9.56.27_o3dg24eqezh4uirug3mgy2mhku
   '@react-three/fiber': 8.11.5_ute6kgba6tjflznmd5zvq2zrly
+  '@stitches/react': 1.2.8_react@18.2.0
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -464,6 +466,14 @@ packages:
     dependencies:
       fflate: 0.7.4
       string.prototype.codepointat: 0.2.1
+    dev: false
+
+  /@stitches/react/1.2.8_react@18.2.0:
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@swc/helpers/0.4.14:
