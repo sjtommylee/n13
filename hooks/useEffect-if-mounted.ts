@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-type Callback = () => void;
-type IfMounted = () => void;
-type Body = () => void;
+type Callback = (...args: any) => void;
+type IfMounted<T extends Callback> = (...args: Parameters<T>) => (...args: Parameters<T>) => void;
+type Body<T extends Callback> = (IfMounted: IfMounted<T>) => void;
 
 export function useEffectIfMounted<T extends Callback>(f: Body<T>, watches: any[]) {
   useEffect(() => {
