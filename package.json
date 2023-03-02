@@ -28,6 +28,7 @@
     "eslint-config-next": "13.2.0",
     "fp-ts": "^2.13.1",
     "framer-motion": "^10.0.1",
+    "i18n": "^0.15.1",
     "io-ts": "^2.2.20",
     "next": "^13.2.1",
     "next-themes": "^0.2.1",
