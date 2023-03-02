@@ -21,6 +21,7 @@ specifiers:
   framer-motion: ^10.0.1
   i18n: ^0.15.1
   io-ts: ^2.2.20
+  lucide-react: ^0.121.0
   next: ^13.2.1
   next-themes: ^0.2.1
   postcss: ^8.4.21
@@ -54,6 +55,7 @@ dependencies:
   framer-motion: 10.0.1_biqbaboplfbrettd7655fr4n2y
   i18n: 0.15.1
   io-ts: 2.2.20_fp-ts@2.13.1
+  lucide-react: 0.121.0_react@18.2.0
   next: 13.2.1_wiv434v7erz4aedd5whhdwmpv4
   next-themes: 0.2.1_qgtcjgzkkjtbiyvnx7d32fl5vu
   react: 18.2.0
@@ -2824,6 +2826,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /lucide-react/0.121.0_react@18.2.0:
+    resolution: {integrity: sha512-O4DgRR9YnlIO1vnzeiin9h2K70u17jM5HrCBWXp0kzVEH20vp0ONhe/rCnUWSj/GpGXsHDbSIxZWXdEvXVYHIw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /maath/0.5.2_x3xb5kejzwedi2ziqasekuiz3e:
