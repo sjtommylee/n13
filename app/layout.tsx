@@ -1,8 +1,11 @@
+"use client";
+
 import "./styles/globals.css";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import localFont from "@next/font/local";
 import { Raleway, Inter as FontSans } from "next/font/google";
+import { RootProvider } from "@/providers";
 
 // const sfPro = localFont({
 //   src: "",
@@ -29,10 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body>
-        <header>
-          <Header />
-        </header>
-        <main>{children}</main>
+        <Header />
+        <RootProvider>
+          <main>{children}</main>
+        </RootProvider>
         <Footer />
       </body>
     </html>
