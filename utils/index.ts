@@ -5,3 +5,8 @@ export const isNumber = (value: unknown): value is number => typeof value === "n
 export const isBoolean = (value: unknown): value is Boolean => typeof value === "boolean";
 export const isElement = (value: unknown): value is Element => isObject(value);
 export const isString = (value: unknown): value is string => typeof value === "string";
+export const isFunction = (value: unknown): value is Function => typeof value === "function";
+export const isDate = (value: unknown): value is Date => isObject(value) && isFunction(value.catch);
+export const isClient = typeof window != "undefined";
+
+//TODO: add typeguard for promises
