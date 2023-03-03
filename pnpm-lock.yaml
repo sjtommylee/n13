@@ -14,6 +14,7 @@ specifiers:
   '@vercel/edge-config': ^0.1.1
   '@vercel/og': ^0.2.0
   autoprefixer: ^10.4.13
+  class-variance-authority: ^0.4.0
   cypress: ^12.7.0
   eslint: 8.34.0
   eslint-config-next: 13.2.0
@@ -48,6 +49,7 @@ dependencies:
   '@vercel/analytics': 0.1.11_react@18.2.0
   '@vercel/edge-config': 0.1.1
   '@vercel/og': 0.2.0
+  class-variance-authority: 0.4.0_typescript@4.9.5
   cypress: 12.7.0
   eslint: 8.34.0
   eslint-config-next: 13.2.0_7kw3g6rralp5ps6mg3uyzz6azm
@@ -1139,6 +1141,17 @@ packages:
   /ci-info/3.8.0:
     resolution: {integrity: sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==}
     engines: {node: '>=8'}
+    dev: false
+
+  /class-variance-authority/0.4.0_typescript@4.9.5:
+    resolution: {integrity: sha512-74enNN8O9ZNieycac/y8FxqgyzZhZbxmCitAtAeUrLPlxjSd5zA7LfpprmxEcOmQBnaGs5hYhiSGnJ0mqrtBLQ==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 4.9.5
     dev: false
 
   /clean-stack/2.2.0:
