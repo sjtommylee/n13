@@ -8,7 +8,16 @@ export const isString = (value: unknown): value is string => typeof value === "s
 export const isFunction = (value: unknown): value is Function => typeof value === "function";
 export const isDate = (value: unknown): value is Date => isObject(value) && isFunction(value.catch);
 export const isClient = typeof window != "undefined";
-
 export function isPromise<T = any>(value: unknown): value is Promise<T> {
   return isObject(value) && isFunction(value.then) && isFunction(value.catch);
+}
+
+export function minMax(value: number, min: number, max: number) {
+  if (value < min) {
+    return min;
+  }
+  if (value > max) {
+    return max;
+  }
+  return value;
 }
