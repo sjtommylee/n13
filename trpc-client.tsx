@@ -1,7 +1,7 @@
 import { httpBatchLink, loggerLink } from "@trpc/client";
 import { createTRPCReact } from "@trpc/react-query";
 
-export const trpc = createTRPCReact<AppRouter>({
+export const trpc = createTRPCReact<any>({
   unstable_overrides: {
     useMutation: {
       async onSuccess(opt) {

@@ -10,14 +10,12 @@
 
 import { Context } from "./context";
 import { initTRPC, TRPCError } from "@trpc/server";
-import superjson from "superjson";
 import { ZodError } from "zod";
 
 const t = initTRPC.context<Context>().create({
   /**
    * @see https://trpc.io/docs/v10/data-transformers
    */
-  transformer: superjson,
   /**
    * @see https://trpc.io/docs/v10/error-formatting
    */
@@ -59,15 +57,12 @@ export const mergeRouters = t.mergeRouters;
  * @see https://trpc.io/docs/v10/procedures
  **/
 export const privateProcedure = t.procedure.use((opts) => {
-  if (!opts.ctx.user) {
+  if (!opts.ctx) {
     throw new TRPCError({
       code: "UNAUTHORIZED",
-      message: "You have to be logged in to do this",
     });
   }
   return opts.next({
-    ctx: {
-      user: opts.ctx.user,
-    },
+    ctx: {},
   });
 });
