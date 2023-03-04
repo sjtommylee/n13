@@ -9,4 +9,6 @@ export const isFunction = (value: unknown): value is Function => typeof value ==
 export const isDate = (value: unknown): value is Date => isObject(value) && isFunction(value.catch);
 export const isClient = typeof window != "undefined";
 
-//TODO: add typeguard for promises
+export function isPromise<T = any>(value: unknown): value is Promise<T> {
+  return isObject(value) && isFunction(value.then) && isFunction(value.catch);
+}
