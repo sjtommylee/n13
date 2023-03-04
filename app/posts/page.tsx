@@ -1,18 +1,9 @@
 import { NextPage, type Metadata } from "next";
 
-export async function generateMeta({ params }: Promise<Metadata | undefined>) {
-  let post;
-  if (!post) {
-    return;
-  }
-
-  const { title, description } = post;
-
-  return {
-    title,
-    description,
-  };
-}
+export const metadata: Metadata = {
+  title: "post",
+  description: "root page for posts",
+};
 
 const BlogPage: NextPage = () => {
   return (
