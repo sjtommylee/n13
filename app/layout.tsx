@@ -3,7 +3,6 @@
 import "./styles/globals.css";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
-import localFont from "@next/font/local";
 import { Raleway, Inter as FontSans } from "next/font/google";
 import { RootProvider } from "@/providers";
 
@@ -25,19 +24,17 @@ const fontSans = FontSans({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body className="">
-        <Header />
-        <RootProvider>
-          <main>{children}</main>
-        </RootProvider>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <head></head>
+        <body className="">
+          <Header />
+          <RootProvider>
+            <main>{children}</main>
+          </RootProvider>
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }

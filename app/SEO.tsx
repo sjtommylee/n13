@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "",
-    template: "",
+    default: "test header, this metadata should show in dom",
+    template: "test header, this metadata should show in dom",
   },
-  description: "",
+  description: "test header, this metadata should show in dom",
 };

@@ -20,6 +20,7 @@ specifiers:
   '@vercel/og': ^0.2.0
   autoprefixer: ^10.4.13
   class-variance-authority: ^0.4.0
+  clsx: ^1.2.1
   cypress: ^12.7.0
   eslint: 8.34.0
   eslint-config-next: 13.2.0
@@ -62,6 +63,7 @@ dependencies:
   '@vercel/edge-config': 0.1.1
   '@vercel/og': 0.2.0
   class-variance-authority: 0.4.0_typescript@4.9.5
+  clsx: 1.2.1
   cypress: 12.7.0
   eslint: 8.34.0
   eslint-config-next: 13.2.0_7kw3g6rralp5ps6mg3uyzz6azm
@@ -1270,6 +1272,11 @@ packages:
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/2.0.1:

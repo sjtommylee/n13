@@ -5,7 +5,7 @@ interface Props {
 export const Header: React.FC<Props> = ({ className }) => {
   return (
     <header className={className}>
-      <div className="bg-black text-white">
+      <div className="text-white">
         <h1>Header</h1>
       </div>
     </header>
