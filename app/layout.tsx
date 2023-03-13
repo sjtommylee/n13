@@ -6,11 +6,6 @@ import { Header } from "../components/header";
 import { Raleway, Inter as FontSans } from "next/font/google";
 import { RootProvider } from "@/providers";
 
-// const sfPro = localFont({
-//   src: "",
-//   variable: "--font-sf",
-// });
-
 const raleway = Raleway({
   subsets: ["latin"],
   weight: ["100", "200", "400", "500", "600", "700", "800", "900"],
@@ -22,7 +17,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode | any }) {
   return (
     <>
       <html lang="en">

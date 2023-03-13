@@ -1,3 +1,5 @@
+// "use-client";
+
 // using the new metadata API
 import type { Metadata } from "next";
 
