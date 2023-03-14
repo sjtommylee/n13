@@ -1,6 +1,5 @@
 "use client";
 
-import "./styles/globals.css";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import { Raleway, Inter as FontSans } from "next/font/google";
@@ -21,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode | a
   return (
     <>
       <html lang="en">
-        <body className="min-h-screen bg-white font-sans text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50">
+        <body>
           <Header />
           <RootProvider>
             <main>{children}</main>
